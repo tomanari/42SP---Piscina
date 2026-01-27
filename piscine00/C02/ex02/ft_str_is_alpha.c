@@ -6,13 +6,13 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 12:12:10 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/27 14:53:49 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/27 19:06:12 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-int ft_str_is_alpha(char *str)
+int	ft_str_is_alpha(char *str)
 {
 	while (*str)
 	{

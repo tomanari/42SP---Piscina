@@ -1,37 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/26 18:08:19 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:37:58 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/01/28 10:50:03 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/01/29 12:37:31 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	*ft_strcpy(char *dest, char *src)
+int	ft_str_is_uppercase(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
+	while (*str)
 	{
-		dest[i] = src[i];
-		i++;
+		if (!(*str >= 'A' && *str <= 'Z'))
+			return (0);
+		str++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (1);
 }
-
-/*int 	main(void)
+/*int main (void)
 {
-	char x[5];
-	char y[] = "ola";
-
-	ft_strcpy(x, y);
-	printf("%s",x);
+	printf("Resultado: %d", ft_str_is_uppercase("ASaaC"));
 	return (0);
 }*/

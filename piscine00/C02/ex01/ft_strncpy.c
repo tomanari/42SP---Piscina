@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 18:53:07 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/27 19:05:53 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/29 12:37:54 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-int 	main(void)
+/*int 	main(void)
 {
 	char x[5];
 	char y[] = "ola";
@@ -33,4 +33,4 @@ int 	main(void)
 	ft_strncpy(x, y, 2);
 	printf("%s",x);
 	return (0);
-}
+}*/

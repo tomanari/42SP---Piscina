@@ -1,37 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/26 18:08:19 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:37:58 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/01/28 12:21:09 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/01/29 12:38:21 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
-void	*ft_strcpy(char *dest, char *src)
+char	*ft_strupcase(char *str)
 {
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
+	while (*str)
 	{
-		dest[i] = src[i];
-		i++;
+		if (*str >= 97 && *str <= 122)
+			*str = *str - 32;
+		str++;
 	}
-	dest[i] = '\0';
-	return (dest);
+	return (str);
 }
 
-/*int 	main(void)
+/*int main(void)
 {
-	char x[5];
-	char y[] = "ola";
-
-	ft_strcpy(x, y);
-	printf("%s",x);
+	char str[] = "aaiushd";
+	ft_strupcase(str);
+	printf("Convertido: %s", str);
 	return (0);
 }*/

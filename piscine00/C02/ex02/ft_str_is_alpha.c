@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 12:12:10 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/27 19:06:12 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/29 12:37:45 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,10 @@ int	ft_str_is_alpha(char *str)
 	return (1);
 }
 
-int	main(void)
+/*int	main(void)
 {
-	char str[] = "";
+	char str[] = " ";
 	printf("resultado: %d",ft_str_is_alpha(str));
 	return (0);
 
-}
+}*/

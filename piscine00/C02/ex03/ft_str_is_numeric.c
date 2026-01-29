@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 14:27:27 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/27 19:07:22 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/29 12:37:41 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int	ft_str_is_numeric(char *str)
 	return (1);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char i[] = "48";
 
 	printf("Resultado: %d", ft_str_is_numeric(i));
 	return(0);
-}
+}*/

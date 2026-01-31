@@ -6,15 +6,13 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 18:53:07 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:37:54 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:53:06 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i != n)
@@ -25,7 +23,10 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-/*int 	main(void)
+/*
+#include <stdio.h>
+
+int 	main(void)
 {
 	char x[5];
 	char y[] = "ola";

@@ -6,11 +6,9 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 12:21:09 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:38:21 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:53:20 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 char	*ft_strupcase(char *str)
 {
@@ -23,7 +21,10 @@ char	*ft_strupcase(char *str)
 	return (str);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	char str[] = "aaiushd";
 	ft_strupcase(str);

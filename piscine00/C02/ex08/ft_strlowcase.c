@@ -6,11 +6,9 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 12:50:28 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:38:29 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:51:51 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 char	*ft_strlowcase(char *str)
 {
@@ -23,7 +21,10 @@ char	*ft_strlowcase(char *str)
 	return (str);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	char str[] = {"SDFWERF"};
 	ft_strlowcase(str);

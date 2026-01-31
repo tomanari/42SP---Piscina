@@ -6,11 +6,9 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 11:07:07 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:37:24 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:53:15 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_str_is_printable(char *str)
 {
@@ -23,7 +21,10 @@ int	ft_str_is_printable(char *str)
 	return (1);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+
+int main(void)
 {
 	printf("Resultado: %d", ft_str_is_printable("\n"));
 	return (0);

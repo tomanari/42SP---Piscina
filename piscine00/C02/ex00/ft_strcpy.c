@@ -6,11 +6,9 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 18:08:19 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:37:58 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:49:17 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 void	*ft_strcpy(char *dest, char *src)
 {
@@ -23,10 +21,10 @@ void	*ft_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
-	return (dest);
 }
+/*#include <stdio.h>
 
-/*int 	main(void)
+int 	main(void)
 {
 	char x[5];
 	char y[] = "ola";

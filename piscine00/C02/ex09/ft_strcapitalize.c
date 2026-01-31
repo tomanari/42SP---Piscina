@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 13:05:02 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 14:15:12 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:53:46 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,10 @@ char	*ft_strcapitalize(char *str)
 	}
 	return (str);
 }
-/*int main(void)
+
+/*#include <stdio.h>
+
+int main(void)
 {
 	char str[] = {"hi, how are you? 42words foRty-two; fiftTy+and+one"};
 	ft_strcapitalize(str);

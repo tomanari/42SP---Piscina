@@ -6,11 +6,9 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 10:50:03 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/29 12:37:31 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 11:50:35 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
 
 int	ft_str_is_uppercase(char *str)
 {
@@ -22,7 +20,10 @@ int	ft_str_is_uppercase(char *str)
 	}
 	return (1);
 }
-/*int main (void)
+/*
+#include <stdio.h>
+
+int main (void)
 {
 	printf("Resultado: %d", ft_str_is_uppercase("ASaaC"));
 	return (0);

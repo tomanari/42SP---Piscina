@@ -6,11 +6,11 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 18:08:19 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/31 11:49:17 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 15:38:50 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, char *src)
 {
 	int	i;
 
@@ -21,6 +21,7 @@ void	*ft_strcpy(char *dest, char *src)
 		i++;
 	}
 	dest[i] = '\0';
+	return (dest);
 }
 /*#include <stdio.h>
 

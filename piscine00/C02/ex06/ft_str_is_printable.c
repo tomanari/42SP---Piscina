@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 11:07:07 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/31 11:53:15 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/01/31 15:31:04 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@ int	ft_str_is_printable(char *str)
 {
 	while (*str)
 	{
-		if (!(*str <= 31 || *str == 127))
+		if ((*str <= 31 || *str == 127))
 			return (0);
 		str++;
 	}

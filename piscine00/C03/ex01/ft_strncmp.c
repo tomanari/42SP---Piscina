@@ -1,36 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/28 12:21:09 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/02/01 14:37:11 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/02/01 11:02:10 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/02/01 15:08:07 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+int	ft_strncmp(char *s1, char *s2, unsigned int n)
 {
-	int	i;
+	int	res;
+	unsigned int	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (s1[i] == s2[i] && (i < n))
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-			str[i] = str[i] - 32;
 		i++;
 	}
-	return (str);
+	return (res = s1[i] - s2[i]);
 }
 
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 
 int main(void)
 {
-	char str[] = "aaiushd";
-	ft_strupcase(str);
-	printf("Convertido: %s", str);
-	return (0);
+	printf("Comp: %d", ft_strncmp("vSTCV","vSDCe", 3));
+	return 0;
 }*/

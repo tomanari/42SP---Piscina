@@ -1,36 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/28 12:21:09 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/02/01 14:37:11 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/01/31 13:22:51 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/02/01 15:04:41 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+int	ft_strcmp(char *s1, char *s2)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
+	while (*s1 != '\0' && *s1 == *s2)
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-			str[i] = str[i] - 32;
-		i++;
+		s1++;
+		s2++;
 	}
-	return (str);
+	return (*s1 - *s2);
 }
 
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 
-int main(void)
+int main(int argc, char **argv)
 {
-	char str[] = "aaiushd";
-	ft_strupcase(str);
-	printf("Convertido: %s", str);
-	return (0);
+	if(argc == 3){
+		printf("Resultado: %d", ft_strcmp(argv[1],argv[2]));}
+	return 0;
 }*/

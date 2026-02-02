@@ -1,36 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/28 12:21:09 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/02/01 14:37:11 by mtomanar         ###   ########.fr       */
+/*   Created: 2026/02/01 15:09:17 by mtomanar          #+#    #+#             */
+/*   Updated: 2026/02/01 17:50:30 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strupcase(char *str)
+char *ft_strcat(char *dest, char *src)
 {
-	int	i;
+	int i;
+	int j;
 
 	i = 0;
-	while (str[i] != '\0')
+	j = 0;
+
+	while (dest[i] != '\0')
 	{
-		if (str[i] >= 97 && str[i] <= 122)
-			str[i] = str[i] - 32;
 		i++;
 	}
-	return (str);
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
+	return (dest);
 }
 
-/*
+
 #include <stdio.h>
 
 int main(void)
 {
-	char str[] = "aaiushd";
-	ft_strupcase(str);
-	printf("Convertido: %s", str);
-	return (0);
-}*/
+	char dest[] = "vSTCV";
+	char scr[] = "vSDCe";
+
+	printf("Comp: %s", ft_strcat(dest,scr));
+	return 0;
+}

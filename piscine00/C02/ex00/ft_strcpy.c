@@ -6,7 +6,7 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 18:08:19 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/31 15:38:50 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/02/01 11:03:00 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ char	*ft_strcpy(char *dest, char *src)
 	dest[i] = '\0';
 	return (dest);
 }
+
 /*#include <stdio.h>
 
 int 	main(void)

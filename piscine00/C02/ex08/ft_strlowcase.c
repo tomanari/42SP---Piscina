@@ -6,17 +6,20 @@
 /*   By: mtomanar <mtomanar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 12:50:28 by mtomanar          #+#    #+#             */
-/*   Updated: 2026/01/31 11:51:51 by mtomanar         ###   ########.fr       */
+/*   Updated: 2026/02/01 15:00:21 by mtomanar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 char	*ft_strlowcase(char *str)
 {
-	while (*str)
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (*str >= 65 && *str <= 90)
-			*str = *str + 32;
-		str ++;
+		if (str[i] >= 65 && str[i] <= 90)
+			str[i] = str[i] + 32;
+		i ++;
 	}
 	return (str);
 }

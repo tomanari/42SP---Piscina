@@ -38,14 +38,14 @@ int  ft_atoi(char *str)
 
   sign = 1;
   res = 0;
-  while (*str == ' ' || *str >= 9 && *str <= 13)
+  while (*str == ' ' || (*str >= 9 && *str <= 13))
   {  
     str++;
   }
-  if (*str == '-' || *str == '+')
+  while(*str == '-' || *str == '+')
   {
     if(*str == '-')
-      sign = -1;
+      sign *= -1;
     str++;
   }
   while (*str >= '0' && *str <= '9')

@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -22,10 +22,9 @@ int ft_strlen(char *str)
 	return (i);
 }
 
-#include <stdio.h>
-
-int main(void)
-{
-	printf("comprimero da string: %d", ft_strlen("Marcella"));
-	return 0;
-}
+// #include <stdio.h>
+// int main(void)
+// {
+// 	printf("comprimero da string: %d", ft_strlen("Marcella"));
+// 	return 0;
+// }

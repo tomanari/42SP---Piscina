@@ -17,17 +17,17 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void ft_putstr(char *str)
+void	ft_putstr(char *str)
 {
-	while(*str !='\0')
+	while (*str != '\0')
 	{
 		ft_putchar(*str);
 		str++;
 	}
 }
 
-int main(void)
-{
-	ft_putstr("MArcella");
-	return 0;
-}
+// int main(void)
+// {
+// 	ft_putstr("MArcella");
+// 	return 0;
+// }

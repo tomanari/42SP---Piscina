@@ -11,14 +11,15 @@
 /* ************************************************************************** */
 
 #include <unistd.h>
-void ft_putchar(char c)
+
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void ft_putnbr(int nb)
+void	ft_putnbr(int nb)
 {
-	long int n;
+	long int	n;
 
 	n = nb;
 	if (n < 0)
@@ -32,8 +33,8 @@ void ft_putnbr(int nb)
 	ft_putchar (n);
 }
 
-int main(void)
-{
-	ft_putnbr(4542);
-	return 0;
-}
+// int main(void)
+// {
+// 	ft_putnbr(4542);
+// 	return 0;
+// }
